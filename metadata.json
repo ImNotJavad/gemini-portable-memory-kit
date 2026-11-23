@@ -1,0 +1,6 @@
+{
+  "name": "Gemini Memory Kit Studio",
+  "description": "Interactive knowledge explorer, live Markdown search, relationship graph, and governance console for Gemini Portable Memory Kit v5.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

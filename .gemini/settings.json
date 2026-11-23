@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "BeforeAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "memory-status-context",
+            "type": "command",
+            "command": "python gemini-memory-kit/gemini/hooks/memory_before.py",
+            "timeout": 10000
+          }
+        ]
+      }
+    ],
+    "AfterAgent": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "name": "memory-check",
+            "type": "command",
+            "command": "python gemini-memory-kit/gemini/hooks/memory_check.py",
+            "timeout": 15000
+          }
+        ]
+      }
+    ]
+  }
+}
